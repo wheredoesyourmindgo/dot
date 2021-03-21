@@ -1,0 +1,5 @@
+location:5325223
+units:imperial
+show_daylight:true
+ansi:true
+background:\033[0m

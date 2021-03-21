@@ -1,0 +1,61 @@
+{
+  "alfredtheme" : {
+    "result" : {
+      "textSpacing" : 5,
+      "subtext" : {
+        "size" : 13,
+        "colorSelected" : "#49E9A6E5",
+        "font" : "mononoki",
+        "color" : "#49E9A699"
+      },
+      "shortcut" : {
+        "size" : 16,
+        "colorSelected" : "#FFFFFFFF",
+        "font" : "mononoki",
+        "color" : "#DF769BE5"
+      },
+      "backgroundSelected" : "#0E667141",
+      "text" : {
+        "size" : 19,
+        "colorSelected" : "#49D6E9FF",
+        "font" : "mononoki",
+        "color" : "#E3B781CC"
+      },
+      "iconPaddingHorizontal" : 4,
+      "paddingVertical" : 3,
+      "iconSize" : 40
+    },
+    "search" : {
+      "paddingVertical" : 4,
+      "background" : "#03191BFF",
+      "spacing" : 8,
+      "text" : {
+        "size" : 33,
+        "colorSelected" : "#000000FF",
+        "font" : "mononoki",
+        "color" : "#B2CACDFF"
+      },
+      "backgroundSelected" : "#B3D7FFFF"
+    },
+    "window" : {
+      "color" : "#052428ED",
+      "paddingHorizontal" : 1,
+      "width" : 550,
+      "borderPadding" : 1,
+      "borderColor" : "#052428FF",
+      "blur" : 15,
+      "roundness" : 3,
+      "paddingVertical" : 1
+    },
+    "credit" : "chico",
+    "separator" : {
+      "color" : "#CBCBCBF3",
+      "thickness" : 0
+    },
+    "scrollbar" : {
+      "color" : "#073840FF",
+      "thickness" : 2
+    },
+    "name" : "Noctis"
+  }
+}
