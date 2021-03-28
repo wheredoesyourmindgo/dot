@@ -2,12 +2,14 @@
 
 "let g:byoa_keymap='qwerty'
 
+
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
 " - Avoid using standard Vim directory names like 'plugin'
 call plug#begin('~/.vim/plugged')
 
 Plug 'wheredoesyourmindgo/vim-byoa'
+Plug 'rhysd/clever-f.vim'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot' " See http://www.drchip.org/astronaut/vim/#HILINKS for more info.
@@ -67,7 +69,6 @@ let g:airline_powerline_fonts = 1 " with ligatures
 " Allows for italics in vim. (https://stackoverflow.com/questions/3494435/vimrc-make-comments-italic)
 let &t_ZH="\e[3m"
 let &t_ZR="\e[23m"
-
 
 " mappings
 " map semi-colon to escape
@@ -206,16 +207,17 @@ noremap <silent> <leader><esc> :noh<cr>
 " vmap <leader>r <Plug>(wildfire-water)
 "nmap <leader><Enter> <Plug>(wildfire-quick-select)
 
+
 " Map double quote to line comment toggle
 map " <plug>NERDCommenterToggle
 
 " vim-surround mappings
-nmap xs  <Plug>Dsurround
-nmap fa  <Plug>Csurround
-nmap fA  <Plug>CSurround
+nmap xs <Plug>Dsurround
+nmap fa <Plug>Csurround
+nmap fA <Plug>CSurround
 " TODO y commands
-xmap Q   <Plug>VSurround
-xmap hQ  <Plug>VgSurround
+xmap Q  <Plug>VSurround
+xmap hQ <Plug>VgSurround
 " insert mappings are unchanged
 if !exists("g:surround_no_insert_mappings") || ! g:surround_no_insert_mappings
   if !hasmapto("<Plug>Isurround","i") && "" == mapcheck("<C-S>","i")
@@ -224,3 +226,6 @@ if !exists("g:surround_no_insert_mappings") || ! g:surround_no_insert_mappings
   imap      <C-G>s <Plug>Isurround
   imap      <C-G>S <Plug>ISurround
 endif
+
+let g:clever_f_not_overwrites_standard_mappings = 1
+let g:clever_f_smart_case=1
