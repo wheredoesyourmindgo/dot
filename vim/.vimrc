@@ -227,5 +227,4 @@ if !exists("g:surround_no_insert_mappings") || ! g:surround_no_insert_mappings
   imap      <C-G>S <Plug>ISurround
 endif
 
-let g:clever_f_not_overwrites_standard_mappings = 1
 let g:clever_f_smart_case=1
