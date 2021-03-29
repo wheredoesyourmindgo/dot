@@ -211,20 +211,4 @@ noremap <silent> <leader><esc> :noh<cr>
 " Map double quote to line comment toggle
 map " <plug>NERDCommenterToggle
 
-" vim-surround mappings
-nmap xs <Plug>Dsurround
-nmap fa <Plug>Csurround
-nmap fA <Plug>CSurround
-" TODO y commands
-xmap Q  <Plug>VSurround
-xmap hQ <Plug>VgSurround
-" insert mappings are unchanged
-if !exists("g:surround_no_insert_mappings") || ! g:surround_no_insert_mappings
-  if !hasmapto("<Plug>Isurround","i") && "" == mapcheck("<C-S>","i")
-    imap    <C-S> <Plug>Isurround
-  endif
-  imap      <C-G>s <Plug>Isurround
-  imap      <C-G>S <Plug>ISurround
-endif
-
 let g:clever_f_smart_case=1
