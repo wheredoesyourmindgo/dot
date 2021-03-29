@@ -12,6 +12,8 @@ Plug 'wheredoesyourmindgo/vim-byoa'
 Plug 'rhysd/clever-f.vim'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
+"Plug 'tpope/vim-surround'
+Plug 'machakann/vim-sandwich'
 Plug 'sheerun/vim-polyglot' " See http://www.drchip.org/astronaut/vim/#HILINKS for more info.
 Plug 'gerw/vim-HiLinkTrace'
 
@@ -42,7 +44,6 @@ Plug 'altercation/vim-colors-solarized'
 
 Plug 'lifepillar/vim-solarized8'
 
-Plug 'tpope/vim-surround'
 "Plug 'Valloric/MatchTagAlways'
 
 "Plug 'leafgarland/typescript-vim' " Covered by vim-polyglot.
