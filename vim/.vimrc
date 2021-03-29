@@ -10,6 +10,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'wheredoesyourmindgo/vim-byoa'
 Plug 'rhysd/clever-f.vim'
+Plug 'machakann/vim-sandwich'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 Plug 'sheerun/vim-polyglot' " See http://www.drchip.org/astronaut/vim/#HILINKS for more info.
