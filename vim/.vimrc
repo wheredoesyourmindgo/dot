@@ -194,7 +194,7 @@ map <space> <leader>
 " Enable Highlight Search
 set hlsearch" Highlight while search
 set incsearch" Case Insensitivity Pattern Matching
-"set ignorecase" Overrides ignorecase if pattern contains upcase
+set ignorecase" Overrides ignorecase if pattern contains upcase
 set smartcase
 " Press <leader> Esc to remove search highlights
 " noremap <silent> <leader><cr> :noh<cr>
