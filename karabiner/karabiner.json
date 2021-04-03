@@ -16,22 +16,6 @@
         },
         "rules": [
           {
-            "description": "Use Left-Command (BN003 cmd+Tab fix)",
-            "manipulators": [
-              {          
-                "from": {
-                  "key_code": "right_command"
-                },
-                "to": [
-                  {
-                    "key_code": "left_command"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "BN003 Volume Up",
             "manipulators": [
               {
@@ -263,7 +247,7 @@
             ]
           },
           {
-            "description": "BN003 Prev App",
+            "description": "BN003 Prev App (left-command)",
             "manipulators": [
               {
                 "conditions": [
@@ -280,13 +264,13 @@
                 "from": {
                   "key_code": "f22",
                   "modifiers": {
-                    "mandatory": ["command"]
+                    "mandatory": ["left_command"]
                   }
                 },
                 "to": [
                   {
                     "key_code": "tab",
-                    "modifiers": ["command", "shift"]
+                    "modifiers": ["left_command", "shift"]
                   }
                 ],
                 "type": "basic"
@@ -294,7 +278,7 @@
             ]
           },
           {
-            "description": "BN003 Next App",
+            "description": "BN003 Next App (left-command)",
             "manipulators": [
               {
                 "conditions": [
@@ -311,13 +295,75 @@
                 "from": {
                   "key_code": "f24",
                   "modifiers": {
-                    "mandatory": ["command"]
+                    "mandatory": ["left_command"]
                   }
                 },
                 "to": [
                   {
                     "key_code": "tab",
-                    "modifiers": ["command"]
+                    "modifiers": ["left_command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Prev App (right-command)",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f22",
+                  "modifiers": {
+                    "mandatory": ["right_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": ["right_command", "shift"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Next App (right-command)",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f24",
+                  "modifiers": {
+                    "mandatory": ["right_command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "tab",
+                    "modifiers": ["right_command"]
                   }
                 ],
                 "type": "basic"
