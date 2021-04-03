@@ -16,20 +16,9 @@
         },
         "rules": [
           {
-            "description": "Use Left-Command (MacBook, BN003 cmd+Tab fix)",
+            "description": "Use Left-Command (BN003 cmd+Tab fix)",
             "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 628,
-                        "vendor_id": 1452
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
+              {          
                 "from": {
                   "key_code": "right_command"
                 },
