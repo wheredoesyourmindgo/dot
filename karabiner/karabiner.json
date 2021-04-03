@@ -97,6 +97,123 @@
             ]
           },
           {
+            "description": "BN003 Mute",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f23"
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "mute"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Prev Media Track",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f22",
+                  "modifiers": {
+                    "mandatory": ["fn"]
+                  }
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "rewind"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Next Media Track",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f24",
+                  "modifiers": {
+                    "mandatory": ["fn"]
+                  }
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "fast_forward"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BN003 Play/Pause Media",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f23",
+                  "modifiers": {
+                    "mandatory": ["fn"]
+                  }
+                },
+                "to": [
+                  {
+                    "consumer_key_code": "play_or_pause"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "BN003 Screen Brighter",
             "manipulators": [
               {
