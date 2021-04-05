@@ -21,7 +21,7 @@ zplug "plugins/git", from:oh-my-zsh
 zplug "plugins/npm", from:oh-my-zsh
 zplug "plugins/yarn", from:oh-my-zsh
 zplug "plugins/osx", from:oh-my-zsh
-zplug "b4b4r07/enhancd", use:init.sh
+# zplug "b4b4r07/enhancd", use:init.sh
 zplug "peterhurford/up.zsh", use:up.plugin.zsh
 #zplug "igoradamenko/npm.plugin.zsh", use: "npm.plugin.zsh"
 
