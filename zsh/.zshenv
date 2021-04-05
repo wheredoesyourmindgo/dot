@@ -1,5 +1,5 @@
-#export SHELL=/bin/zsh
-export SHELL=/usr/local/bin/zsh
+export SHELL=/bin/zsh
+#export SHELL=/usr/local/bin/zsh
 
 #export TERM="xterm-256color"
 
