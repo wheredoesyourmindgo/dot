@@ -2,6 +2,12 @@
 
 "let g:byoa_keymap='qwerty'
 
+" Auto background mode based on .zshrc function
+if exists('theme') && theme == 'light'
+  set background=light
+else
+  set background=dark
+endif
 
 " Specify a directory for plugins
 " - For Neovim: ~/.local/share/nvim/plugged
@@ -111,7 +117,7 @@ let g:solarized_termtrans=1
 let g:solarized_use16=1
 let g:solarized_italics=1 " needs to be before colorscheme to remove gray background
 "set background=light
-set background=dark
+"set background=dark
 colorscheme solarized8
 let g:airline_theme='solarized'
 "let g:lightline = {

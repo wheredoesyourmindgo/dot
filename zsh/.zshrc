@@ -76,12 +76,9 @@ fi
 #if which jenv > /dev/null; then eval "$(jenv init -)"; fi
 alias jenv-init='if which jenv > /dev/null; then eval "$(jenv init -)"; fi'
 
-
 # assume i wan't to update atom
 alias apmu='apm update --no-confirm'
 alias brewu='brew update && brew upgrade'
-
-alias macvim='mvim'
 
 alias download='$HOME/.download.sh'
 
@@ -91,9 +88,6 @@ source ~/.iterm2_shell_integration.zsh
 # see alternate script for terminating kapersky
 #alias kill_kapersky="sudo killall -SIGKILL klnagent && sudo killall -SIGKILL kav && sudo killall -SIGKILL kav_agent"
 
-alias vi="vim"
-alias vim="vim"
-
 alias delete_terminal_logs="sudo rm -v /var/log/asl/*.asl"
 
 alias screenfetch="screenfetch -E"
@@ -101,6 +95,17 @@ alias screenfetch="screenfetch -E"
 # angular cli auto completion via output of `ng completion` command
 #source ~/.ng-completion.sh
 
+alias vi="vim"
+alias macvim='mvim'
+function vim {
+  DARK_MODE=$(dark-mode status)
+
+  if [[ "$DARK_MODE" == "on" ]]; then
+    env vim --cmd "let theme = 'dark'" $@
+  else
+    env vim --cmd "let theme = 'light'" $@
+  fi
+}
 
 # yarn/npm
 alias yarno="yarn outdated"
