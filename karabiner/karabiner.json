@@ -16,6 +16,23 @@
         },
         "rules": [
           {
+            "description": "Change Menu to Fn",
+            "manipulators": [
+              {
+                "conditions": [],
+                "from": {
+                  "key_code": "menu"
+                },
+                "to": [
+                  {
+                    "key_code": "fn"
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "BN003 Volume Up",
             "manipulators": [
               {
@@ -127,36 +144,6 @@
             ]
           },
           {
-            "description": "BN003 Prev Media Track via Hyper",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f22",
-                  "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "consumer_key_code": "rewind"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "BN003 Next Media Track",
             "manipulators": [
               {
@@ -187,36 +174,6 @@
             ]
           },
           {
-            "description": "BN003 Next Media Track via Hyper",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f24",
-                  "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "consumer_key_code": "fast_forward"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "BN003 Play/Pause Media",
             "manipulators": [
               {
@@ -235,36 +192,6 @@
                   "key_code": "f23",
                   "modifiers": {
                     "mandatory": ["fn"]
-                  }
-                },
-                "to": [
-                  {
-                    "consumer_key_code": "play_or_pause"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BN003 Play/Pause Media Track via Hyper",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f23",
-                  "modifiers": {
-                    "mandatory": ["command", "control", "option", "shift"]
                   }
                 },
                 "to": [
