@@ -209,7 +209,4 @@ noremap <silent> <leader><esc> :noh<cr>
 "nmap <leader><Enter> <Plug>(wildfire-quick-select)
 
 
-" Map alt+double quote to line comment toggle
-map æ <plug>NERDCommenterToggle
-
-let g:clever_f_smart_case=1
+"let g:clever_f_smart_case=1
