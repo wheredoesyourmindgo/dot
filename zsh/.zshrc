@@ -4,8 +4,8 @@
 precmd() { print "" }
 
 # ZPLUG
-#export ZPLUG_HOME=$(brew --prefix)/opt/zplug
-export ZPLUG_HOME=$HOME/.zplug
+#export ZPLUG_HOME=$HOME/.zplug
+export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 source $ZPLUG_HOME/init.zsh
 
 # Make sure to use double quotes
