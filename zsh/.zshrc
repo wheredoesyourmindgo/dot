@@ -4,8 +4,12 @@
 precmd() { print "" }
 
 # ZPLUG
-#export ZPLUG_HOME=$HOME/.zplug
-export ZPLUG_HOME=$(brew --prefix)/opt/zplug
+# use homebrew version of zplug w/ macos
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  export ZPLUG_HOME=$(brew --prefix)/opt/zplug
+else
+  export ZPLUG_HOME=$HOME/.zplug
+fi
 source $ZPLUG_HOME/init.zsh
 
 # Make sure to use double quotes
@@ -130,10 +134,14 @@ fortune | cowsay -f small | lolcat
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
-# [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-# [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+# use homebrew version of nvm w/ macos
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+else
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+  [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+fi
 # Auto switch using .nvmrc
 autoload -Uz add-zsh-hook
 load-nvmrc() {
