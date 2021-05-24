@@ -90,7 +90,9 @@ alias brewu='brew update && brew upgrade'
 alias download='$HOME/.download.sh'
 
 # iTerm2.9 Shell Integration
-source ~/.iterm2_shell_integration.zsh
+if [[ "$OSTYPE" == "darwin"* ]]; then
+  source ~/.iterm2_shell_integration.zsh
+fi
 
 # see alternate script for terminating kapersky
 #alias kill_kapersky="sudo killall -SIGKILL klnagent && sudo killall -SIGKILL kav && sudo killall -SIGKILL kav_agent"
