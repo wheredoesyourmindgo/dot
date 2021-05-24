@@ -8,7 +8,7 @@ precmd() { print "" }
 if [[ "$OSTYPE" == "darwin"* ]]; then
   export ZPLUG_HOME=$(brew --prefix)/opt/zplug
 # Arch linux (via Aur)
-elif [[ $(lsb_release -d) == "Arch"* ]]; then
+elif [[ $(lsb_release -d) == *"Arch"* ]]; then
   export ZPLUG_HOME=/usr/share/zsh/scripts/zplug
 else
   export ZPLUG_HOME=$HOME/.zplug
@@ -144,7 +144,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 # Arch linux (via Aur)
-elif [[ $(lsb_release -d) == "Arch"* ]]; then
+elif [[ $(lsb_release -d) == *"Arch"* ]]; then
   [ -s "/usr/share/nvm/init-nvm.sh" ] && source "/usr/share/nvm/init-nvm.sh"  # This loads nvm convenience script
 # Source (via curl)
 else
