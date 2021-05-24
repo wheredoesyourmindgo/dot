@@ -140,7 +140,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 # Arch linux (via Aur)
 elif [[ $(lsb_release -d) == "Arch"* ]]; then
-  [ -s "/usr/share/nvm/init-nvm.sh" ] && . "/usr/share/nvm/init-nvm.sh"  # This loads nvm convenience script
+  [ -s "/usr/share/nvm/init-nvm.sh" ] && source "/usr/share/nvm/init-nvm.sh"  # This loads nvm convenience script
 # Source (via curl)
 else
   [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
