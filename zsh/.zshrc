@@ -4,9 +4,12 @@
 precmd() { print "" }
 
 # ZPLUG
-# use homebrew version of zplug w/ macos
+# use Homebrew version of zplug w/ MacOS
 if [[ "$OSTYPE" == "darwin"* ]]; then
   export ZPLUG_HOME=$(brew --prefix)/opt/zplug
+# Arch linux (via Aur)
+elif [[ $(lsb_release -d) == "Arch"* ]]; then
+  export ZPLUG_HOME=/usr/share/zsh/scripts/zplug
 else
   export ZPLUG_HOME=$HOME/.zplug
 fi
