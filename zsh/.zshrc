@@ -70,6 +70,8 @@ gitall() {
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init --path)"
 fi
+# If using pyenv on linux there is some code to add here regarding paths. see https://github.com/pyenv/pyenv#basic-github-checkout for more info.
+
 ## rehash slow at load. rehash in the background.
 ##if which pyenv > /dev/null; then eval "$(pyenv init - --no-rehash)"; fi
 ##(pyenv rehash &) 2> /dev/null
