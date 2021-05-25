@@ -68,7 +68,7 @@ gitall() {
 
 # pyenv
 if command -v pyenv 1>/dev/null 2>&1; then
-  eval "$(pyenv init -)"
+  eval "$(pyenv init --path)"
 fi
 ## rehash slow at load. rehash in the background.
 ##if which pyenv > /dev/null; then eval "$(pyenv init - --no-rehash)"; fi
