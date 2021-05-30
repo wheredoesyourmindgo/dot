@@ -6,3 +6,4 @@ cp ansiweather/.ansiweatherrc ~/
 [ -d "$HOME/.ssh" ] && cp .ssh/config ~/.ssh/
 [ -d "$HOME/.config/karabiner" ] && cp karabiner/karabiner.json ~/.config/karabiner/
 [ -d "$HOME/Library/Services" ] && cp -R Library/Services/* ~/Library/Services/
+[ -d "$HOME/Library/Application Support/iTerm2/Scripts" ] && cp -R iterm/scripts/* ~/Library/Application\ Support/iTerm2/Scripts/
