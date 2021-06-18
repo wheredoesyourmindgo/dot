@@ -16,6 +16,48 @@
         },
         "rules": [
           {
+            "description": "Change Cmd+v to Redo",
+            "manipulators": [
+              {
+                "conditions": [],
+                "from": {
+                  "key_code": "v",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "z",
+                    "modifiers": ["shift", "command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Change Cmd+d to Paste",
+            "manipulators": [
+              {
+                "conditions": [],
+                "from": {
+                  "key_code": "d",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "v",
+                    "modifiers": ["command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Change Menu to Fn",
             "manipulators": [
               {
