@@ -15,7 +15,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 Plug 'wheredoesyourmindgo/vim-byoa', { 'branch': 'main' }
-Plug 'rhysd/clever-f.vim'
+"Plug 'rhysd/clever-f.vim'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 "Plug 'tpope/vim-surround'
