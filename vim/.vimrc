@@ -16,6 +16,9 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'wheredoesyourmindgo/vim-byoa', { 'branch': 'main' }
 "Plug 'rhysd/clever-f.vim'
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-entire'
+Plug 'kana/vim-textobj-indent'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-fugitive'
 "Plug 'tpope/vim-surround'
