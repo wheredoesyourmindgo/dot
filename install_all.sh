@@ -3,7 +3,9 @@ cp hyper/.hyper.js ~/
 cp vim/.vimrc vim/.gvimrc ~/
 cp zsh/.zshrc zsh/.zshenv zsh/.zprofile ~/
 cp ansiweather/.ansiweatherrc ~/
-[ -d "$HOME/.ssh" ] && cp .ssh/config ~/.ssh/
+[ -d "$HOME/.ssh" ] && cp ssh/config ~/.ssh/
+[ "$HOME" == "/Users/abe" ] && cp git/@home/.gitconfig ~/.gitconfig
+[ "$HOME" == "/Users/ahendricks" ] && cp git/@work/.gitconfig ~/.gitconfig
 [ -d "$HOME/.config/karabiner" ] && cp karabiner/karabiner.json ~/.config/karabiner/
 [ -d "$HOME/.config" ] && cp starship/starship.toml ~/.config/
 [ -d "$HOME/Library/Services" ] && cp -R Library/Services/* ~/Library/Services/
