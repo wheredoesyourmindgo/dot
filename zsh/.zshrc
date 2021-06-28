@@ -4,6 +4,7 @@
 precmd() { print "" }
 
 # zplug init
+# ...
 
 # Make sure to use double quotes
 #zplug "g-plane/zsh-yarn-autocompletions", hook-build:"./zplug.zsh", defer:2
@@ -131,6 +132,7 @@ fortune | cowsay -f small | lolcat
 
 export NVM_DIR="$HOME/.nvm"
 # nvm init
+# ...
 
 # Auto switch using .nvmrc
 autoload -Uz add-zsh-hook
