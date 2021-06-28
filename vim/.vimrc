@@ -72,6 +72,7 @@ syntax enable
 " allow backspacing over everything in insert mode
 set backspace=indent,eol,start
 set tabstop=2 softtabstop=0 expandtab shiftwidth=2 smarttab
+set number
 
 let g:airline_powerline_fonts = 1 " with ligatures
 "let g:airline_powerline_fonts = 0 " without ligatures
