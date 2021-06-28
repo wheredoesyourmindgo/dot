@@ -1,0 +1,11 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+name = Abe Hendricks
+email = ahendricks@pcwa.net
+[core]
+	trustctime = false
+[init]
+	defaultBranch = main
+[pull]
+	rebase = false
