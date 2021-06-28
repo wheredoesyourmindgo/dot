@@ -3,18 +3,7 @@
 # skip line after command
 precmd() { print "" }
 
-# ZPLUG
-# use Homebrew version of zplug w/ MacOS
-if [[ "$OSTYPE" == "darwin"* ]]; then
-  export ZPLUG_HOME=$(brew --prefix)/opt/zplug
-  source $ZPLUG_HOME/init.zsh
-# Arch linux (via Aur)
-elif [[ $(lsb_release -d) == *"Arch"* ]]; then
-  source /usr/share/zsh/scripts/zplug/init.zsh
-else
-  export ZPLUG_HOME=$HOME/.zplug
-  source $ZPLUG_HOME/init.zsh
-fi
+# zplug init
 
 # Make sure to use double quotes
 #zplug "g-plane/zsh-yarn-autocompletions", hook-build:"./zplug.zsh", defer:2
