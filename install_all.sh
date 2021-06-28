@@ -33,3 +33,6 @@ elif [[ $(lsb_release -d) == *"Arch"* ]]; then
 else
 	{ head -n $nvm_line $zshrc_tmp; cat zsh/partial/nvm_source.sh; tail -n +$(($nvm_line+1)) $zshrc_tmp; } > ~/.zshrc
 fi
+
+# clean up tmp files
+rm $zshrc_tmp
