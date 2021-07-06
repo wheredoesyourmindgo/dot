@@ -114,96 +114,6 @@
             ]
           },
           {
-            "description": "BNR1 Prev Media Track",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f19",
-                  "modifiers": {
-                    "mandatory": ["fn"]
-                  }
-                },
-                "to": [
-                  {
-                    "consumer_key_code": "rewind"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BNR1 Next Media Track",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f21",
-                  "modifiers": {
-                    "mandatory": ["fn"]
-                  }
-                },
-                "to": [
-                  {
-                    "consumer_key_code": "fast_forward"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BNR1 Play/Pause Media",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f20",
-                  "modifiers": {
-                    "mandatory": ["fn"]
-                  }
-                },
-                "to": [
-                  {
-                    "consumer_key_code": "play_or_pause"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "BNR1 Screen Brighter",
             "manipulators": [
               {
@@ -221,7 +131,7 @@
                 "from": {
                   "key_code": "f19",
                   "modifiers": {
-                    "mandatory": ["shift"]
+                    "mandatory": ["fn"]
                   }
                 },
                 "to": [
@@ -251,7 +161,7 @@
                 "from": {
                   "key_code": "f21",
                   "modifiers": {
-                    "mandatory": ["shift"]
+                    "mandatory": ["fn"]
                   }
                 },
                 "to": [
