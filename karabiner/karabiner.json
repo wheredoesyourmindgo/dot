@@ -14,7 +14,7 @@
           "basic.to_if_held_down_threshold_milliseconds": 500,
           "mouse_motion_to_scroll.speed": 100
         },
-        "rules": [ 
+        "rules": [
           {
             "description": "Change Menu to Fn",
             "manipulators": [
@@ -48,11 +48,11 @@
                   }
                 ],
                 "from": {
-                  "key_code": "f22"
+                  "key_code": "f24"
                 },
                 "to": [
                   {
-                    "consumer_key_code": "volume_decrement"
+                    "consumer_key_code": "volume_increment"
                   }
                 ],
                 "type": "basic"
@@ -60,7 +60,7 @@
             ]
           },
           {
-            "description": "BN003 Volume Up",
+            "description": "BN003 Volume Down",
             "manipulators": [
               {
                 "conditions": [
@@ -75,11 +75,11 @@
                   }
                 ],
                 "from": {
-                  "key_code": "f24"
+                  "key_code": "f22"
                 },
                 "to": [
                   {
-                    "consumer_key_code": "volume_increment"
+                    "consumer_key_code": "volume_decrement"
                   }
                 ],
                 "type": "basic"
