@@ -1576,133 +1576,6 @@
             ]
           },
           {
-            "description": "Change Backslash to Backspace [D] (disabled)",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 4640,
-                        "vendor_id": 17498
-                      },
-                      {
-                        "product_id": 615,
-                        "vendor_id": 76
-                      },
-                      {
-                        "product_id": 628,
-                        "vendor_id": 1452
-                      },
-                      {
-                        "product_id": 631,
-                        "vendor_id": 1452
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "",
-                  "modifiers": {
-                    "optional": ["control", "caps_lock", "option", "command"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "delete_or_backspace"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Change Shift-Backslash to Delete-forward [D] (disabled)",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 4640,
-                        "vendor_id": 17498
-                      },
-                      {
-                        "product_id": 615,
-                        "vendor_id": 76
-                      },
-                      {
-                        "product_id": 628,
-                        "vendor_id": 1452
-                      },
-                      {
-                        "product_id": 631,
-                        "vendor_id": 1452
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "",
-                  "modifiers": {
-                    "mandatory": ["shift"],
-                    "optional": ["any"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "delete_forward"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Change Backspace to Backslash [D] (disabled)",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 4640,
-                        "vendor_id": 17498
-                      },
-                      {
-                        "product_id": 615,
-                        "vendor_id": 76
-                      },
-                      {
-                        "product_id": 628,
-                        "vendor_id": 1452
-                      },
-                      {
-                        "product_id": 631,
-                        "vendor_id": 1452
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "",
-                  "modifiers": {
-                    "optional": ["any"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "backslash"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
             "description": "Change Capslock to Control [D]",
             "manipulators": [
               {
@@ -1773,46 +1646,6 @@
                 "to": [
                   {
                     "key_code": "caps_lock"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Change Shift-Backspace to Delete-forward [D] (disabled)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "",
-                  "modifiers": {
-                    "mandatory": ["shift"],
-                    "optional": ["option", "caps_lock"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "delete_forward"
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Change Control + q (quote) to grave accent and tilde (disabled)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "",
-                  "modifiers": {
-                    "mandatory": ["control"],
-                    "optional": ["caps_lock", "shift"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "grave_accent_and_tilde"
                   }
                 ],
                 "type": "basic"
@@ -3623,26 +3456,6 @@
                   {
                     "key_code": "right_arrow",
                     "modifiers": ["shift"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "Map ctrl + [ to escape (disabled)",
-            "manipulators": [
-              {
-                "from": {
-                  "key_code": "",
-                  "modifiers": {
-                    "mandatory": ["control"],
-                    "optional": ["any"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "escape"
                   }
                 ],
                 "type": "basic"
