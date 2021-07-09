@@ -1,15 +1,16 @@
 #!/bin/sh
-cp hyper/.hyper.js ~/
-cp vim/.vimrc vim/.gvimrc ~/
-cp zsh/.zshrc zsh/.zshenv zsh/.zprofile ~/
-cp ansiweather/.ansiweatherrc ~/
-[ -d "$HOME/.ssh" ] && cp ssh/config ~/.ssh/
-[ "$HOME" == "/Users/abe" ] && cp git/@home/.gitconfig ~/.gitconfig
-[ "$HOME" == "/Users/ahendricks" ] && cp git/@work/.gitconfig ~/.gitconfig
-[ -d "$HOME/.config/karabiner" ] && cp karabiner/karabiner.json ~/.config/karabiner/
-[ -d "$HOME/.config" ] && cp starship/starship.toml ~/.config/
-[ -d "$HOME/Library/Services" ] && cp -R Library/Services/* ~/Library/Services/
-[ -d "$HOME/Library/Application Support/iTerm2/Scripts" ] && cp -R iterm/scripts/* ~/Library/Application\ Support/iTerm2/Scripts/
+cp hyper/.hyper.js "$HOME/"
+cp vim/.vimrc vim/.gvimrc "$HOME/"
+cp zsh/.zshrc zsh/.zshenv zsh/.zprofile "$HOME/"
+cp ansiweather/.ansiweatherrc "$HOME/"
+[ -d "$HOME/.ssh" ] && cp ssh/config "$HOME/.ssh/"
+[ "$HOME" == "/Users/abe" ] && cp git/@home/.gitconfig "$HOME/.gitconfig"
+[ "$HOME" == "/Users/ahendricks" ] && cp git/@work/.gitconfig "$HOME/.gitconfig"
+[ -d "$HOME/.config/karabiner" ] && cp karabiner/karabiner.json "$HOME/.config/karabiner/"
+[ -d "$HOME/.config" ] && cp starship/starship.toml "$HOME/.config/"
+[ -d "$HOME/Library/Services" ] && cp -R Library/Services/* "$HOME/Library/Services/"
+[ -d "$HOME/Library/Application Support/iTerm2/Scripts" ] && cp -R iterm/scripts/* "$HOME/Library/Application Support/iTerm2/Scripts/"
+[ -d "$HOME/Library/Application Support/Code/User" ] && cp vscode/keybindings.json "$HOME/Library/Application Support/Code/User/"
 
 # Patch .zshrc so that zplug init runs correctly depending on host
 zplug_line=$(grep -n '# zplug init' ~/.zshrc | cut -d ":" -f 1)
