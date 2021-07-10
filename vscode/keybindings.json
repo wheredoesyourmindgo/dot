@@ -102,7 +102,7 @@
     "command": "-workbench.action.terminal.toggleTerminal"
   },
   {
-    "key": "alt+p",
+    "key": "alt+f",
     "command": "workbench.action.terminal.toggleTerminal"
   },
   {
