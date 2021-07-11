@@ -11,6 +11,8 @@ cp ansiweather/.ansiweatherrc "$HOME/"
 [ -d "$HOME/Library/Services" ] && cp -R Library/Services/* "$HOME/Library/Services/"
 [ -d "$HOME/Library/Application Support/iTerm2/Scripts" ] && cp -R iterm/scripts/* "$HOME/Library/Application Support/iTerm2/Scripts/"
 [ -d "$HOME/Library/Application Support/Code/User" ] && cp vscode/keybindings.json "$HOME/Library/Application Support/Code/User/"
+[ -d "$HOME/Library/Preferences" ] && cp amethyst/com.amethyst.Amethyst.plist "$HOME/Library/Preferences/"
+[ -d "$HOME/Library/Preferences" ] && cp rectangle/com.knollsoft.Rectangle.plist "$HOME/Library/Preferences/"
 
 # Patch .zshrc so that zplug init runs correctly depending on host
 zplug_line=$(grep -n '# zplug init' ~/.zshrc | cut -d ":" -f 1)
