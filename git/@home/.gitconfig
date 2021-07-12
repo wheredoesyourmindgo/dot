@@ -15,7 +15,6 @@
 	excludesfile = /Users/abe/.gitignore_global
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
 	trustExitCode = true
 [merge]
 	tool = Kaleidoscope
