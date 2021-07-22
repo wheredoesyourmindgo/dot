@@ -131,7 +131,7 @@
                 "from": {
                   "key_code": "f19",
                   "modifiers": {
-                    "mandatory": ["fn"]
+                    "mandatory": ["shift"]
                   }
                 },
                 "to": [
@@ -161,7 +161,7 @@
                 "from": {
                   "key_code": "f21",
                   "modifiers": {
-                    "mandatory": ["fn"]
+                    "mandatory": ["shift"]
                   }
                 },
                 "to": [
@@ -515,14 +515,14 @@
             ]
           },
           {
-            "description": "BN003 Volume Up",
+            "description": "BN003 Paste",
             "manipulators": [
               {
                 "conditions": [
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -534,7 +534,8 @@
                 },
                 "to": [
                   {
-                    "consumer_key_code": "volume_increment"
+                    "key_code": "v",
+                    "modifiers": ["left_command"]
                   }
                 ],
                 "type": "basic"
@@ -542,14 +543,14 @@
             ]
           },
           {
-            "description": "BN003 Volume Down",
+            "description": "BN003 Cut",
             "manipulators": [
               {
                 "conditions": [
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -561,7 +562,8 @@
                 },
                 "to": [
                   {
-                    "consumer_key_code": "volume_decrement"
+                    "key_code": "x",
+                    "modifiers": ["left_command"]
                   }
                 ],
                 "type": "basic"
@@ -569,14 +571,14 @@
             ]
           },
           {
-            "description": "BN003 Mute",
+            "description": "BN003 Copy",
             "manipulators": [
               {
                 "conditions": [
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -588,7 +590,8 @@
                 },
                 "to": [
                   {
-                    "consumer_key_code": "mute"
+                    "key_code": "c",
+                    "modifiers": ["left_command"]
                   }
                 ],
                 "type": "basic"
@@ -603,7 +606,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -633,7 +636,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -663,7 +666,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -693,7 +696,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -723,7 +726,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -753,7 +756,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -784,7 +787,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -815,7 +818,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -846,7 +849,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -877,7 +880,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -908,7 +911,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -939,7 +942,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -970,7 +973,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -1001,7 +1004,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -1032,7 +1035,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -1063,7 +1066,7 @@
                   {
                     "identifiers": [
                       {
-                        "product_id": 17031,
+                        "product_id": 17030,
                         "vendor_id": 16969
                       }
                     ],
@@ -4912,6 +4915,32 @@
             "is_pointing_device": true,
             "product_id": 42233,
             "vendor_id": 936
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": true,
+            "product_id": 17030,
+            "vendor_id": 16969
+          },
+          "ignore": false,
+          "manipulate_caps_lock_led": false,
+          "simple_modifications": []
+        },
+        {
+          "disable_built_in_keyboard_if_exists": false,
+          "fn_function_keys": [],
+          "identifiers": {
+            "is_keyboard": true,
+            "is_pointing_device": false,
+            "product_id": 17030,
+            "vendor_id": 16969
           },
           "ignore": false,
           "manipulate_caps_lock_led": false,
