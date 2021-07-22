@@ -515,7 +515,7 @@
             ]
           },
           {
-            "description": "BN003 Paste",
+            "description": "BN003 Next Tab",
             "manipulators": [
               {
                 "conditions": [
@@ -534,8 +534,8 @@
                 },
                 "to": [
                   {
-                    "key_code": "v",
-                    "modifiers": ["left_command"]
+                    "key_code": "tab",
+                    "modifiers": ["left_control"]
                   }
                 ],
                 "type": "basic"
@@ -543,7 +543,7 @@
             ]
           },
           {
-            "description": "BN003 Cut",
+            "description": "BN003 Prev Tab",
             "manipulators": [
               {
                 "conditions": [
@@ -562,8 +562,8 @@
                 },
                 "to": [
                   {
-                    "key_code": "x",
-                    "modifiers": ["left_command"]
+                    "key_code": "tab",
+                    "modifiers": ["left_control", "left_shift"]
                   }
                 ],
                 "type": "basic"
@@ -571,7 +571,7 @@
             ]
           },
           {
-            "description": "BN003 Copy",
+            "description": "BN003 New Tab",
             "manipulators": [
               {
                 "conditions": [
@@ -590,7 +590,7 @@
                 },
                 "to": [
                   {
-                    "key_code": "c",
+                    "key_code": "t",
                     "modifiers": ["left_command"]
                   }
                 ],
