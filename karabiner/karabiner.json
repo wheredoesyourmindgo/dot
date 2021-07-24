@@ -174,7 +174,7 @@
             ]
           },
           {
-            "description": "BNR1 Prev App (left-command)",
+            "description": "BNR1 Zoom Out",
             "manipulators": [
               {
                 "conditions": [
@@ -191,13 +191,13 @@
                 "from": {
                   "key_code": "f19",
                   "modifiers": {
-                    "mandatory": ["left_command"]
+                    "mandatory": ["control"]
                   }
                 },
                 "to": [
                   {
-                    "key_code": "tab",
-                    "modifiers": ["left_command", "shift"]
+                    "key_code": "hyphen",
+                    "modifiers": ["left_command", "left_alt"]
                   }
                 ],
                 "type": "basic"
@@ -205,7 +205,7 @@
             ]
           },
           {
-            "description": "BNR1 Next App (left-command)",
+            "description": "BNR1 Zoon In",
             "manipulators": [
               {
                 "conditions": [
@@ -222,12 +222,74 @@
                 "from": {
                   "key_code": "f21",
                   "modifiers": {
-                    "mandatory": ["left_command"]
+                    "mandatory": ["control"]
                   }
                 },
                 "to": [
                   {
-                    "key_code": "tab",
+                    "key_code": "equal_sign",
+                    "modifiers": ["left_command", "left_alt"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Zoom Toggle",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f20",
+                  "modifiers": {
+                    "mandatory": ["control"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "8",
+                    "modifiers": ["left_command", "left_alt"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "BNR1 Zoom Out App",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 17031,
+                        "vendor_id": 16969
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "f19",
+                  "modifiers": {
+                    "mandatory": ["option"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "hyphen",
                     "modifiers": ["left_command"]
                   }
                 ],
@@ -236,224 +298,7 @@
             ]
           },
           {
-            "description": "BNR1 Prev App (right-command)",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f19",
-                  "modifiers": {
-                    "mandatory": ["right_command"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "tab",
-                    "modifiers": ["right_command", "shift"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BNR1 Next App (right-command)",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f21",
-                  "modifiers": {
-                    "mandatory": ["right_command"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "tab",
-                    "modifiers": ["right_command"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BNR1 Mission Control",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f20",
-                  "modifiers": {
-                    "mandatory": ["command"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "up_arrow",
-                    "modifiers": ["control"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BNR1 Prev Space",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f19",
-                  "modifiers": {
-                    "mandatory": ["control"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "left_arrow",
-                    "modifiers": ["control"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BNR1 Next Space",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f21",
-                  "modifiers": {
-                    "mandatory": ["control"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "right_arrow",
-                    "modifiers": ["control"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BNR1 Full Screen",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f20",
-                  "modifiers": {
-                    "mandatory": ["control"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "f",
-                    "modifiers": ["control", "command"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BNR1 Prev Window",
-            "manipulators": [
-              {
-                "conditions": [
-                  {
-                    "identifiers": [
-                      {
-                        "product_id": 17031,
-                        "vendor_id": 16969
-                      }
-                    ],
-                    "type": "device_if"
-                  }
-                ],
-                "from": {
-                  "key_code": "f19",
-                  "modifiers": {
-                    "mandatory": ["option"]
-                  }
-                },
-                "to": [
-                  {
-                    "key_code": "grave_accent_and_tilde",
-                    "modifiers": ["command"]
-                  }
-                ],
-                "type": "basic"
-              }
-            ]
-          },
-          {
-            "description": "BNR1 Next Window",
+            "description": "BNR1 Zoom In App",
             "manipulators": [
               {
                 "conditions": [
@@ -475,8 +320,8 @@
                 },
                 "to": [
                   {
-                    "key_code": "grave_accent_and_tilde",
-                    "modifiers": ["command", "shift"]
+                    "key_code": "equal_sign",
+                    "modifiers": ["left_command", "left_shift"]
                   }
                 ],
                 "type": "basic"
@@ -484,7 +329,7 @@
             ]
           },
           {
-            "description": "BNR1 App Windows",
+            "description": "BNR1 Reset Zoom App",
             "manipulators": [
               {
                 "conditions": [
@@ -506,8 +351,8 @@
                 },
                 "to": [
                   {
-                    "key_code": "down_arrow",
-                    "modifiers": ["control"]
+                    "key_code": "0",
+                    "modifiers": ["left_command"]
                   }
                 ],
                 "type": "basic"
