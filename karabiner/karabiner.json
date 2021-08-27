@@ -3449,6 +3449,84 @@
             ]
           },
           {
+            "description": "Paste",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 631,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "v",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "v",
+                    "modifiers": ["command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
+            "description": "Redo",
+            "manipulators": [
+              {
+                "conditions": [
+                  {
+                    "identifiers": [
+                      {
+                        "product_id": 615,
+                        "vendor_id": 76
+                      },
+                      {
+                        "product_id": 628,
+                        "vendor_id": 1452
+                      },
+                      {
+                        "product_id": 631,
+                        "vendor_id": 1452
+                      }
+                    ],
+                    "type": "device_if"
+                  }
+                ],
+                "from": {
+                  "key_code": "b",
+                  "modifiers": {
+                    "mandatory": ["command"]
+                  }
+                },
+                "to": [
+                  {
+                    "key_code": "z",
+                    "modifiers": ["shift", "command"]
+                  }
+                ],
+                "type": "basic"
+              }
+            ]
+          },
+          {
             "description": "Use Colemak-DH [D]",
             "manipulators": [
               {
